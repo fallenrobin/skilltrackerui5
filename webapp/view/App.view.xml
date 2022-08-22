@@ -48,7 +48,7 @@ xmlns:mvc="sap.ui.core.mvc">
         </uxap:headerContent>
         <uxap:headerTitle>
             <uxap:ObjectPageHeader 
-            objectTitle="{Employee>/0/firstname}" 
+            objectTitle="{AllData>/Employees/0/firstname}" 
             objectSubtitle="Job title" 
             headerDesign="Light" 
             objectImageShape="Square" 

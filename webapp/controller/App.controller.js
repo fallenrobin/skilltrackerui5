@@ -9,7 +9,7 @@ sap.ui.define(
       return BaseController.extend("skilltrackerui5.controller.controller.App", {
         onInit() {
           var dataModel = this.getOwnerComponent().getModel("tableData");
-          this.getView().setModel(dataModel, "Employee");
+          this.getView().setModel(dataModel, "AllData");
         }
       });
     }
