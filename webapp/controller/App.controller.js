@@ -38,20 +38,20 @@ sap.ui.define(
 
 		oData : [{
 				width: "30%",
-				header: "Product Name",
+				header: "Skill",
 				demandPopin: false,
 				minScreenWidth: "",
 				styleClass: "cellBorderLeft cellBorderRight"
 			}, {
 				width: "20%",
-				header: "Supplier Name",
+				header: "Proficiency",
 				demandPopin: false,
 				minScreenWidth: "",
 				styleClass: "cellBorderRight"
 			}, {
 				width: "50%",
-				header: "Description",
-				demandPopin: true,
+				header: "Date Modified",
+				demandPopin: false,
 				minScreenWidth: "Tablet",
 				styleClass: "cellBorderRight"
 			}

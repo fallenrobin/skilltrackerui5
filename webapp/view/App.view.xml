@@ -92,21 +92,21 @@ xmlns:mvc="sap.ui.core.mvc">
 		}">
 		<headerToolbar>
 			<Toolbar>
-				<Title text="{AllData>/Skills/0/skillname}" level="H2"/>
+				<Title text="My Skills" level="H2"/>
 				<ToolbarSpacer />
 			</Toolbar>
 		</headerToolbar>
 		<columns>
 			<Column width="{clone>width}" styleClass="{clone>styleClass}" demandPopin="{clone>demandPopin}" minScreenWidth="{clone>minScreenWidth}" popinDisplay="WithoutHeader">
-				<Input value="{clone>width}" description="{clone>header}"/>
+				<Text text="{clone>header}"/>
 			</Column>
 		</columns>
 		<items>
-			<ColumnListItem vAlign="Middle" type="Navigation">
+			<ColumnListItem vAlign="Middle" >
 				<cells>
-					<Text text="{Skills>skillname}" wrapping="false" />
-					<Text text="{Skills>rating}" wrapping="false"/>
-					<Text text="{Skills>type}" wrapping="false" />
+					<Text text="{AllData>skillname}" wrapping="false" />
+					<Text text="{AllData>rating}" wrapping="false"/>
+					<Text text="{AllData>dateModified}" wrapping="false" />
 				</cells>
 			</ColumnListItem>
 		</items>
