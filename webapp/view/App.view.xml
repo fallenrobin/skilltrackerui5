@@ -23,13 +23,13 @@ xmlns:mvc="sap.ui.core.mvc">
             displayInline="false">
                 <items>
                     <Link 
-                    text="+33 6 1555 5353" 
+                    text="{AllData>/Employees/0/phone}" 
                     textAlign="Begin" 
                     width="auto" 
                     target="_blank" 
                     wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
                     <Link 
-                    text="test@sap.com" 
+                    text="{AllData>/Employees/0/email}" 
                     textAlign="Begin" 
                     width="auto" 
                     target="_blank" 
@@ -38,7 +38,6 @@ xmlns:mvc="sap.ui.core.mvc">
                 <layoutData/>
             </VBox>
             <Label 
-            text="Hello and Welcome!" 
             design="Standard" 
             width="100%" 
             required="false" 
@@ -48,8 +47,8 @@ xmlns:mvc="sap.ui.core.mvc">
         </uxap:headerContent>
         <uxap:headerTitle>
             <uxap:ObjectPageHeader 
-            objectTitle="Employee Name" 
-            objectSubtitle="Job title" 
+            objectTitle="{AllData>/Employees/0/firstname} {AllData>/Employees/0/lastname}" 
+            objectSubtitle="{AllData>/Employees/0/role}" 
             headerDesign="Light" 
             objectImageShape="Square" 
             isObjectIconAlwaysVisible="false" 

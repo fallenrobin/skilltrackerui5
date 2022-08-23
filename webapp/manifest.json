@@ -24,6 +24,10 @@
           "localUri": "localService/metadata.xml",
           "odataVersion": "2.0"
         }
+      },
+      "tableData_alias": {
+        "uri": "localService/data/DataSet.json",
+        "type": "JSON"
       }
     }
   },
@@ -68,6 +72,10 @@
         "settings": {
           "bundleName": "skilltrackerui5.i18n.i18n"
         }
+      },
+      "tableData": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "tableData_alias"
       },
       "": {
         "dataSource": "mainService",
