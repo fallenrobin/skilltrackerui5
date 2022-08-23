@@ -80,19 +80,38 @@ xmlns:mvc="sap.ui.core.mvc">
                     <uxap:ObjectPageSubSection 
                     title="Skills" 
                     mode="Expanded">
-                        <uxap:blocks>
-                            <Label 
-                            text="text under Skills tab" 
-                            design="Standard" 
-                            width="100%" 
-                            required="false" 
-                            textAlign="Begin" textDirection="Inherit" visible="true"/>
-                        </uxap:blocks>
                         
-                        <uxap:moreBlocks/>
-                        <uxap:blocks>
-                        
-                        </uxap:blocks>
+        <Table
+		id="table"
+		mode="MultiSelect"
+		items="{
+			path: 'AllData>/Skills'
+		}"
+		columns="{
+			path: 'clone>/'
+		}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="{AllData>/Skills/0/skillname}" level="H2"/>
+				<ToolbarSpacer />
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column width="{clone>width}" styleClass="{clone>styleClass}" demandPopin="{clone>demandPopin}" minScreenWidth="{clone>minScreenWidth}" popinDisplay="WithoutHeader">
+				<Input value="{clone>width}" description="{clone>header}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" type="Navigation">
+				<cells>
+					<Text text="{Skills>skillname}" wrapping="false" />
+					<Text text="{Skills>rating}" wrapping="false"/>
+					<Text text="{Skills>type}" wrapping="false" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
                         <uxap:actions/>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
@@ -119,9 +138,9 @@ xmlns:mvc="sap.ui.core.mvc">
                         </uxap:blocks>
                         <uxap:moreBlocks/>
                         <uxap:actions/>
-                    </uxap:ObjectPageSubSection>
-                    
+                    </uxap:ObjectPageSubSection>   
                 </uxap:subSections>
+
                 <uxap:customAnchorBarButton/>
             </uxap:ObjectPageSection>
         </uxap:sections>
