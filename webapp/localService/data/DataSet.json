@@ -2,11 +2,11 @@
     "Employees": [
         {
             "id": "id1",
-            "role": "role1",
-            "firstname": "firstname1",
-            "lastname": "lastname1",
-            "email": "email1",
-            "phone": "phone1"
+            "role": "poet warrior",
+            "firstname": "Patti",
+            "lastname": "Smith",
+            "email": "psmith@justkids.com",
+            "phone": "123-456-7890"
         },
         {
             "id": "id2",

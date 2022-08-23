@@ -26,7 +26,7 @@
         }
       },
       "tableData_alias": {
-        "uri": "localService/data/EmployeeSet.json",
+        "uri": "localService/data/DataSet.json",
         "type": "JSON"
       }
     }
