@@ -80,48 +80,85 @@ xmlns:mvc="sap.ui.core.mvc">
                     <uxap:ObjectPageSubSection 
                     title="Skills" 
                     mode="Expanded">
-                        <uxap:blocks>
-                            <Label 
-                            text="text under Skills tab" 
-                            design="Standard" 
-                            width="100%" 
-                            required="false" 
-                            textAlign="Begin" textDirection="Inherit" visible="true"/>
-                        </uxap:blocks>
                         
-                        <uxap:moreBlocks/>
-                        <uxap:blocks>
-                        
-                        </uxap:blocks>
+                        <Table
+                        id="table"
+                        mode="MultiSelect"
+                        items="{
+                            path: 'AllData>/Skills'
+                        }"
+                        columns="{
+                            path: 'clone>/'
+                        }">
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="My Skills" level="H2"/>
+                                <ToolbarSpacer />
+                            </Toolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column width="{clone>width}" styleClass="{clone>styleClass}" demandPopin="{clone>demandPopin}" minScreenWidth="{clone>minScreenWidth}" popinDisplay="WithoutHeader">
+                                <Text text="{clone>header}"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem vAlign="Middle" >
+                                <cells>
+                                    <Text text="{AllData>skillname}" wrapping="false" />
+                                    <Text text="{AllData>rating}" wrapping="false"/>
+                                    <Text text="{AllData>dateModified}" wrapping="false" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
                         <uxap:actions/>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
                 <uxap:customAnchorBarButton/>
+
             </uxap:ObjectPageSection>
             <uxap:ObjectPageSection 
-            showTitle="true" 
+            showTitle="false" 
             title="Page Section Title" 
-            titleUppercase="true" 
             visible="true">
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection 
                     title="Projects" 
                     mode="Expanded">
-                        <uxap:blocks>
-                            <Label 
-                            text="Text under projects tab" 
-                            design="Standard" 
-                            width="100%" 
-                            required="false" 
-                            textAlign="Begin" 
-                            textDirection="Inherit" 
-                            visible="true"/>
-                        </uxap:blocks>
-                        <uxap:moreBlocks/>
+                        <Table
+                        id="table2"
+                        mode="MultiSelect"
+                        items="{
+                            path: 'AllData>/Projects'
+                        }"
+                        columns="{
+                            path: 'clone>/'
+                        }">
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="My Projects" level="H2"/>
+                                <ToolbarSpacer />
+                            </Toolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column width="{clone>width}" styleClass="{clone>styleClass}" demandPopin="{clone>demandPopin}" minScreenWidth="{clone>minScreenWidth}" popinDisplay="WithoutHeader">
+                                <Text text="{clone>header}"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem vAlign="Middle" >
+                                <cells>
+                                    <Text text="{AllData>projectname}" wrapping="false" />
+                                    <Text text="{AllData>rating}" wrapping="false"/>
+                                    <Text text="{AllData>dateModified}" wrapping="false" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
                         <uxap:actions/>
-                    </uxap:ObjectPageSubSection>
-                    
+                    </uxap:ObjectPageSubSection>   
                 </uxap:subSections>
+
                 <uxap:customAnchorBarButton/>
             </uxap:ObjectPageSection>
         </uxap:sections>

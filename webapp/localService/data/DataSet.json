@@ -30,61 +30,71 @@
             "skillid": "skillid1",
             "rating": "rating1",
             "type": "type1",
-            "skillname": "UI5"
+            "skillname": "UI5",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid2",
             "rating": "rating2",
             "type": "type2",
-            "skillname": "skillname2"
+            "skillname": "React",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid3",
             "rating": "rating3",
             "type": "type3",
-            "skillname": "skillname3"
+            "skillname": "ABAP",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid4",
             "rating": "rating4",
             "type": "type4",
-            "skillname": "skillname4"
+            "skillname": "ABAP RAP",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid5",
             "rating": "rating5",
             "type": "type5",
-            "skillname": "skillname5"
+            "skillname": "CAPM",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid6",
             "rating": "rating6",
             "type": "type6",
-            "skillname": "skillname6"
+            "skillname": "OData",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid7",
             "rating": "rating7",
             "type": "type7",
-            "skillname": "skillname7"
+            "skillname": "MUI",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid8",
             "rating": "rating8",
             "type": "type8",
-            "skillname": "skillname8"
+            "skillname": "Figma",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid9",
             "rating": "rating9",
             "type": "type9",
-            "skillname": "skillname9"
+            "skillname": "postreSQL",
+            "dateModified": "1/1/2020"
         },
         {
             "skillid": "skillid10",
             "rating": "rating10",
             "type": "type10",
-            "skillname": "skillname10"
+            "skillname": "Java",
+            "dateModified": "1/1/2020"
         }
     ],
     "Projects": [
@@ -93,35 +103,75 @@
             "projectname": "projectname1",
             "startdate": "startdate1",
             "enddate": "enddate1",
-            "teammember": "teammember1"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid2",
             "projectname": "projectname2",
             "startdate": "startdate2",
             "enddate": "enddate2",
-            "teammember": "teammember2"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid3",
             "projectname": "projectname3",
             "startdate": "startdate3",
             "enddate": "enddate3",
-            "teammember": "teammember3"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid4",
             "projectname": "projectname4",
             "startdate": "startdate4",
             "enddate": "enddate4",
-            "teammember": "teammember4"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid5",
             "projectname": "projectname5",
             "startdate": "startdate5",
             "enddate": "enddate5",
-            "teammember": "teammember5"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         }
     ]
 }
