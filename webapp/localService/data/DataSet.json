@@ -103,35 +103,75 @@
             "projectname": "projectname1",
             "startdate": "startdate1",
             "enddate": "enddate1",
-            "teammember": "teammember1"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid2",
             "projectname": "projectname2",
             "startdate": "startdate2",
             "enddate": "enddate2",
-            "teammember": "teammember2"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid3",
             "projectname": "projectname3",
             "startdate": "startdate3",
             "enddate": "enddate3",
-            "teammember": "teammember3"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid4",
             "projectname": "projectname4",
             "startdate": "startdate4",
             "enddate": "enddate4",
-            "teammember": "teammember4"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         },
         {
             "projectid": "projectid5",
             "projectname": "projectname5",
             "startdate": "startdate5",
             "enddate": "enddate5",
-            "teammember": "teammember5"
+            "teammembers": [
+                {"name": "Tom"},
+                {"name": "Dick"},
+                {"name": "Harry"}
+            ],
+            "notes": [
+                {"note": "Morbi vel justo pretium, pellentesque arcu non, tincidunt massa."},
+                {"note": "In in risus id dolor tincidunt elementum a sit amet velit."}
+            ]
         }
     ]
 }
